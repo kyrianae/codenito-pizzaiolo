@@ -1,1 +1,1 @@
-web: gunicorn guichet:app
+web: gunicorn pizzaiolo:app
