@@ -10,7 +10,7 @@ def hello():
 
 @app.route('/make_pizza', methods=['GET'])
 def make_pizza():
-    return "Pizzaiolo\tMake pizza"
+    return "Pizzaiolo\Made a pizza"
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8082)
