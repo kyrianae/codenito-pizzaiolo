@@ -6,11 +6,13 @@ app = Flask("pizzaiolo")
 
 @app.route('/hello', methods=['GET'])
 def hello():
-    return "Hello World\n"
+    print ("Pizzaiolo says: Hello World")
+    return "Pizzaiolo says: Hello World\n"
 
 @app.route('/make_pizza', methods=['GET'])
 def make_pizza():
-    return "Pizzaiolo\Made a pizza"
+    print ("Pizzaiolo\tMade a pizza")
+    return "Pizzaiolo\tMade a pizza"
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8082)
